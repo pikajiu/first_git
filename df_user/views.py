@@ -42,9 +42,9 @@ def register_exist(request):
 
 def login(request):
     # 1. get cookie,need default value to avoid 'NONE'.
-    uname = request.COOKIES.get('user_account','')
+    uname = request.COOKIES.get('user_account', '')
     # 2. fill in the account blank
-    context = {'error_name': 0, 'error_pwd': 0,'username':uname}
+    context = {'error_name': 0, 'error_pwd': 0, 'username': uname}
     return render(request, 'df_user/login.html', context)
 
 
@@ -79,7 +79,7 @@ def login_handle(request):
         else:
             # password error
             # context = {'error_name': 0, 'error_pwd': 1}  多挖两个坑
-            context = {'error_name': 0, 'error_pwd': 1,'username':uname,'password':upwd}
+            context = {'error_name': 0, 'error_pwd': 1, 'username': uname, 'password': upwd}
             return render(request, 'df_user/login.html', context)
     else:
         # account not exist
@@ -91,3 +91,23 @@ def login_handle(request):
 
 def user_info(request):
     return render(request, 'df_user/user_center_info.html')
+
+
+def user_order(request):
+    return render(request, 'df_user/user_center_order.html')
+
+
+def user_site(request):
+    # get user info from database
+    user = UserInfo.objects.get(id=request.session['user_id'])
+    # if submit ，get user additional info from form
+    if request.method == 'POST':
+        post = request.POST
+        user.ushou = post['ushou']
+        user.uaddress = post['uaddress']
+        user.uyoubian = post['uyoubian']
+        user.uphone = post['uphone']
+        user.save()
+    # need variable to receive them in template
+    context = {'user': user}
+    return render(request, 'df_user/user_center_site.html', context)

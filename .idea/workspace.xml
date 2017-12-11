@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1867821-0c88-48ba-bbbd-afd74932969c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_goods/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_user/migrations/0002_auto_20171211_2116.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyrefresh/settings.py" afterPath="$PROJECT_DIR$/dailyrefresh/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyrefresh/urls.py" afterPath="$PROJECT_DIR$/dailyrefresh/urls.py" />

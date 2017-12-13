@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'tinymce',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'df_user',
+    'tinymce',
     'df_goods',
 ]
 
@@ -129,8 +129,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 # 部署阶段上传文件目录
 # MEDIA_ROOT = '/var/www/dailyrefresh/static'
 
+
 TINYMCE_DEFAULT_CONFIG = {
-    'theme': 'advance',
+    # 'theme': 'advance',
     'width': 600,
     'height': 400,
 }

@@ -101,7 +101,4 @@ venv.bak/
 /site
 
 # mypy
-.mypy_cache/
-
-# pycharm workspace.xml
-workspace.xml
+.mypy_cac

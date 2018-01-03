@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.core.paginator import Paginator
 from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 
@@ -34,4 +35,40 @@ def index(request):
                'type50': type50,
                'type51': type51,
                }
-    return render(request,'df_goods/index.html',context)
+    return render(request, 'df_goods/index.html', context)
+
+
+def list(request, typeID, pagenum, sortType):
+    # 事先声明，解决局部变量未定义问题
+    news = []
+    true_typeid = int(typeID)
+    typeinfo = TypeInfo.objects.get(id=(true_typeid))
+    news = typeinfo.goodsinfo_set.order_by('-id')[0:2]
+    if sortType == '1':  # 默认排序方式，最新
+        goods_list = GoodsInfo.objects.filter(gtype_id=int(true_typeid)).order_by('-id')
+    if sortType == '2':
+        goods_list = GoodsInfo.objects.filter(gtype_id=int(true_typeid)).order_by('-gprice')
+    if sortType == '3':
+        goods_list = GoodsInfo.objects.filter(gtype_id=int(true_typeid)).order_by('-gclick')
+
+    paginator = Paginator(goods_list, 10)
+    page = paginator.page(int(pagenum))
+    context = {
+        'page': page,
+        'paginator': paginator,
+        'typeinfo': typeinfo,
+        'sort': sortType,
+        'news': news,
+    }
+
+    return render(request, 'df_goods/list.html', context)
+
+
+def detail(request, gid):
+    goods = GoodsInfo.objects.get(pk=int(gid))
+    goods.gclick += 1
+    news = goods.gtype.goodsinfo_set.order_by('-id')[0:2]
+    context = {
+        'title': goods.gtype.ttitle, 'g': goods, 'news': news, 'id': gid
+    }
+    return render(request,'df_goods/detail.html',context)

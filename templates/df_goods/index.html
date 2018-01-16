@@ -14,17 +14,22 @@
 		<div class="header">
 			<div class="welcome fl">欢迎来到天天生鲜!</div>
 			<div class="fr">
-				<div class="login_info fl">
-					欢迎您：<em>张 山</em>
+                {% if request.session.user_name|default:"" != " " %}
+				<div class="login_btn fl">
+					欢迎您：<em>{{ request.session.user_name }}</em>
+                    <span>|</span>
+                    <a href="/user/logout/">退出</a>
 				</div>
 				<div class="login_btn fl">
-					<a href="login.html">登录</a>
-					<span>|</span>
-					<a href="register.html">注册</a>
+                {% else %}
+					<a href="/user/login/">登录</a>
+
+					<a href="/user/register/">注册</a>
 				</div>
+                {% endif %}
 				<div class="user_link fl">
 					<span>|</span>
-					<a href="user_center_info.html">用户中心</a>
+					<a href="/user/info/">用户中心</a>
 					<span>|</span>
 					<a href="cart.html">我的购物车</a>
 					<span>|</span>
@@ -91,7 +96,7 @@
 			<div class="subtitle fl">
 				<span>|</span>
                 {% for goods in type01 %}
-                    <a href="/{{ goods.id }}/">{{ goods.gtitle|slice:10 }}...</a>
+                    <a href="/{{ goods.id }}/">{{ goods.gtitle|slice:"10" }}...</a>
                 {% endfor %}
 			</div>
 			<a href="/list1_1_1" class="goods_more fr" id="fruit_more">查看更多 ></a>
@@ -102,7 +107,7 @@
 			<ul class="goods_list fl">
                 {% for goods in type00 %}
                   <li>
-					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a></h4>
+					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a></h4>
 					<a href="/{{goods.id  }}"><img src="/static/{{ goods.gpic }}"></a>
 					<div class="prize">¥ {{ goods.gprice }}</div>
 				</li>
@@ -117,7 +122,7 @@
 			<div class="subtitle fl">
 				<span>|</span>
                 {% for goods in type11 %}
-                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a>
+                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a>
                 {% endfor %}
 			</div>
 			<a href="/list2_1_1" class="goods_more fr">查看更多 ></a>
@@ -128,7 +133,7 @@
 			<ul class="goods_list fl">
                 {% for goods in type10 %}
                     <li>
-					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a></h4>
+					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a></h4>
 					<a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
 					<div class="prize">¥ {{ goods.gprice }}</div>
 				</li>
@@ -143,7 +148,7 @@
 			<div class="subtitle fl">
 				<span>|</span>
                 {% for goods in type21 %}
-                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a>
+                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a>
                 {% endfor %}
 			</div>
 			<a href="/list3_1_1" class="goods_more fr">查看更多 ></a>
@@ -154,7 +159,7 @@
 			<ul class="goods_list fl">
                 {% for goods in type20 %}
                     <li>
-					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a></h4>
+					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a></h4>
 					<a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
 					<div class="prize">¥ {{ goods.gprice }}</div>
 				</li>
@@ -169,7 +174,7 @@
 			<div class="subtitle fl">
 				<span>|</span>
                 {% for goods in type31 %}
-                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a>
+                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a>
                 {% endfor %}
 			</div>
 			<a href="/list4_1_1" class="goods_more fr">查看更多 ></a>
@@ -180,7 +185,7 @@
 			<ul class="goods_list fl">
                 {% for goods in type30 %}
                     <li>
-					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a></h4>
+					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a></h4>
 					<a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
 					<div class="prize">¥ {{ goods.gprice }}</div>
 				</li>
@@ -195,7 +200,7 @@
 			<div class="subtitle fl">
 				<span>|</span>
                 {% for goods in type41 %}
-                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a>
+                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a>
                 {% endfor %}
 			</div>
 			<a href="/list5_1_1" class="goods_more fr">查看更多 ></a>
@@ -206,7 +211,7 @@
 			<ul class="goods_list fl">
                 {% for goods in type40 %}
                     <li>
-					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a></h4>
+					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a></h4>
 					<a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
 					<div class="prize">¥ {{ goods.gprice }}</div>
 				</li>
@@ -221,7 +226,7 @@
 			<div class="subtitle fl">
 				<span>|</span>
                 {% for goods in type51 %}
-                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a>
+                    <a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a>
                 {% endfor %}
 			</div>
 			<a href="/list6_1_1" class="goods_more fr">查看更多 ></a>
@@ -232,7 +237,7 @@
 			<ul class="goods_list fl">
                 {% for goods in type50 %}
                     <li>
-					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:10 }}</a></h4>
+					<h4><a href="/{{ goods.id }}">{{ goods.gtitle|slice:"10" }}</a></h4>
 					<a href="/{{ goods.id }}"><img src="/static/{{ goods.gpic }}"></a>
 					<div class="prize">¥ {{ goods.gprice }}</div>
 				</li>

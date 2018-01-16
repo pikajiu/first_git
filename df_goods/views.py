@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from Queue import Queue
+
 from django.core.paginator import Paginator
 from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -71,4 +73,24 @@ def detail(request, gid):
     context = {
         'title': goods.gtype.ttitle, 'g': goods, 'news': news, 'id': gid
     }
-    return render(request,'df_goods/detail.html',context)
+    response = render(request, 'df_goods/detail.html', context)
+
+    # 取得Cookie值
+    scan_list = request.COOKIES.get('scan_list', '')
+    goods_id = '%d'%goods.id
+    if scan_list != '':
+
+        # 拆分成列表
+        scan_lists = scan_list.split(',')
+        if scan_lists.count(goods_id)>0:
+            scan_lists.remove(goods_id)
+        scan_lists.insert(0,goods_id)
+        if len(scan_lists)>5:
+            del scan_lists[5]
+        scan_list = u','.join(scan_lists)
+    else:
+        scan_list = goods_id
+    response.set_cookie('scan_list',scan_list)
+
+
+    return response

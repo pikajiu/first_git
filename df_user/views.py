@@ -4,8 +4,10 @@ from __future__ import unicode_literals
 from django.http import JsonResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 
+from df_goods.models import GoodsInfo
 from df_user.models import UserInfo
 from hashlib import sha1
+import user_check_decorator
 
 
 def register(request):
@@ -41,6 +43,7 @@ def register_exist(request):
 
 
 def login(request):
+    cookies = request.COOKIES
     # 1. get cookie,need default value to avoid 'NONE'.
     uname = request.COOKIES.get('user_account', '')
     # 2. fill in the account blank
@@ -64,7 +67,8 @@ def login_handle(request):
         # 3. validate password : compare with database password after sha1.if not, return .
         # check whether password is correct
         if upwd2 == usercount[0].upwd:
-            redirect_to_info = HttpResponseRedirect('/user/info')
+            url = request.COOKIES.get('url', '/index/')
+            redirect_to_info = HttpResponseRedirect(url)
             # # # add a new function: Remember account name
             #     随便传个值，就不会是0
             if remember != 0:
@@ -89,14 +93,34 @@ def login_handle(request):
         return render(request, 'df_user/login.html', context)
 
 
+def logout(request):
+    request.session.flush()
+    return redirect('/index/')
+
+
+@user_check_decorator.login
 def user_info(request):
-    return render(request, 'df_user/user_center_info.html')
+    user = UserInfo.objects.get(id=request.session['user_id'])
+
+    # 通过cookie拿到user的浏览记录，安全考虑应换成session
+    scan_list = request.COOKIES.get('scan_list','')
+    scan_lists = scan_list.split(',')
+    goods_list = []
+    for goods in scan_lists:
+        goods_list.append(GoodsInfo.objects.get(id = int(goods)))
+    content = {
+        'user':user,
+        'goods_list':goods_list,
+    }
+    return render(request, 'df_user/user_center_info.html',content)
 
 
+@user_check_decorator.login
 def user_order(request):
     return render(request, 'df_user/user_center_order.html')
 
 
+@user_check_decorator.login
 def user_site(request):
     # get user info from database
     user = UserInfo.objects.get(id=request.session['user_id'])

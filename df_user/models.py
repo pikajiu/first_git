@@ -13,3 +13,7 @@ class UserInfo (models.Model):
     uyoubian = models.CharField(max_length=6,default='')
     uphone = models.CharField(max_length=11,default='')
     #default, blank 是python层面的约束，不影响数据库，不需要重新迁移
+
+
+    def __str__(self):
+        return self.uname.encode('utf-8')

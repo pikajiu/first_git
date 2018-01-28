@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress ALL -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -23,7 +24,6 @@
 
         }
 
-
         $(function () {
             $(".num_show").blur(function () {
                 // language=JQuery-CSS
@@ -34,7 +34,35 @@
 
             })
 
+
+
         })
+    </script>
+
+    <script type="text/javascript">
+        function add_cart() {
+            if ($(".login_btn").text().indexOf('登录') >= 0) {
+                alert("请先登录再购买");
+                location.href = '/user/login';
+                return
+            }
+            $(".add_jump").stop().animate({
+                    'left': $to_y + 7,
+                    'top': $to_x + 7
+                },
+                'slow', function () {
+                    $(".add_jump").fadeOut('slow', function () {
+
+                    });
+                });
+
+            $.get('/cart/add{{ g.id }}' +
+                "_" + $(".num_show").val(), function (data) {
+                    $('#show_count').text(data.count);
+                }
+            )
+
+        }
     </script>
 </head>
 <body>
@@ -42,28 +70,28 @@
     <div class="header">
         <div class="welcome fl">欢迎来到天天生鲜!</div>
         <div class="fr">
-                {% if request.session.user_name|default:"" != " " %}
-				<div class="login_btn fl">
-					欢迎您：<em>{{ request.session.user_name }}</em>
+            {% if request.session.user_name|default:"" != "" %}
+                <div class="login_btn fl">
+                    欢迎您：<em>{{ request.session.user_name }}</em>
                     <span>|</span>
                     <a href="/user/logout/">退出</a>
-				</div>
-				<div class="login_btn fl">
-                {% else %}
-					<a href="/user/login/">登录</a>
-
-					<a href="/user/register/">注册</a>
-				</div>
-                {% endif %}
-				<div class="user_link fl">
-					<span>|</span>
-					<a href="/user/info/">用户中心</a>
-					<span>|</span>
-					<a href="cart.html">我的购物车</a>
-					<span>|</span>
-					<a href="user_center_order.html">我的订单</a>
-				</div>
-			</div>
+                </div>
+            {% else %}
+                <div class="login_btn fl">
+                    <a href="/user/login/">登录</a>
+                    <span>|</span>
+                    <a href="/user/register/">注册</a>
+                </div>
+            {% endif %}
+            <div class="user_link fl">
+                <span>|</span>
+                <a href="/user/info/">用户中心</a>
+                <span>|</span>
+                <a href="cart.html">我的购物车</a>
+                <span>|</span>
+                <a href="user_center_order.html">我的订单</a>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -132,7 +160,7 @@
         <div class="total">总价：<em id="gtotal">{{ g.gprice }}</em></div>
         <div class="operate_btn">
             <a href="javascript:;" class="buy_btn">立即购买</a>
-            <a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>
+            <a href="javascript:add_cart();" class="add_cart" id="add_cart">加入购物车</a>
         </div>
     </div>
 </div>

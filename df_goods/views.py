@@ -77,20 +77,19 @@ def detail(request, gid):
 
     # 取得Cookie值
     scan_list = request.COOKIES.get('scan_list', '')
-    goods_id = '%d'%goods.id
+    goods_id = '%d' % goods.id
     if scan_list != '':
 
         # 拆分成列表
         scan_lists = scan_list.split(',')
-        if scan_lists.count(goods_id)>0:
+        if scan_lists.count(goods_id) > 0:
             scan_lists.remove(goods_id)
-        scan_lists.insert(0,goods_id)
-        if len(scan_lists)>5:
+        scan_lists.insert(0, goods_id)
+        if len(scan_lists) > 5:
             del scan_lists[5]
         scan_list = u','.join(scan_lists)
     else:
         scan_list = goods_id
-    response.set_cookie('scan_list',scan_list)
-
+    response.set_cookie('scan_list', scan_list)
 
     return response

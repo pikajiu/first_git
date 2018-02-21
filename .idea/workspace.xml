@@ -6,21 +6,9 @@
     <bookmark url="file://$PROJECT_DIR$/df_cart/models.py" line="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1867821-0c88-48ba-bbbd-afd74932969c" name="Default" comment="define df_cart app">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/df_cart/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/cart.html" afterPath="$PROJECT_DIR$/templates/df_cart/cart.html" />
+    <list default="true" id="c1867821-0c88-48ba-bbbd-afd74932969c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyrefresh/settings.py" afterPath="$PROJECT_DIR$/dailyrefresh/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dailyrefresh/urls.py" afterPath="$PROJECT_DIR$/dailyrefresh/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/df_goods/views.py" afterPath="$PROJECT_DIR$/df_goods/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/df_user/admin.py" afterPath="$PROJECT_DIR$/df_user/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/df_user/models.py" afterPath="$PROJECT_DIR$/df_user/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_user_center.html" afterPath="$PROJECT_DIR$/templates/base_user_center.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/df_goods/detail.html" afterPath="$PROJECT_DIR$/templates/df_goods/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/df_goods/index.html" afterPath="$PROJECT_DIR$/templates/df_goods/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/df_goods/list.html" afterPath="$PROJECT_DIR$/templates/df_goods/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/place_order.html" afterPath="$PROJECT_DIR$/templates/place_order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,17 +46,17 @@
         <entry file="file://$PROJECT_DIR$/df_user/user_check_decorator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+              <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/df_cart/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1099">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="21">
+              <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -76,11 +64,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/df_cart/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="441">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
               <folding>
                 <element signature="e#646#678#0" expanded="true" />
               </folding>
@@ -91,7 +89,7 @@
       <file leaf-file-name="threading.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/threading.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1290">
+            <state relative-caret-position="15813">
               <caret line="753" column="0" lean-forward="false" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
               <folding />
             </state>
@@ -101,11 +99,9 @@
       <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/df_cart/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="152" column="33" lean-forward="true" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
-              <folding>
-                <element signature="e#2533#3263#0#HTML" expanded="false" />
-              </folding>
+            <state relative-caret-position="3192">
+              <caret line="152" column="33" lean-forward="false" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,7 +109,7 @@
       <file leaf-file-name="exception.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/exception.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="441">
               <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
@@ -123,7 +119,7 @@
       <file leaf-file-name="deprecation.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/django/utils/deprecation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="2856">
               <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding />
             </state>
@@ -133,7 +129,7 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/df_cart/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="231">
               <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="28" />
               <folding />
             </state>
@@ -214,6 +210,7 @@
         <option value="$PROJECT_DIR$/templates/df_cart/cart.html" />
         <option value="$PROJECT_DIR$/df_cart/urls.py" />
         <option value="$PROJECT_DIR$/df_cart/views.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -275,38 +272,6 @@
               <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
               <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
-              <item name="df_cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
-              <item name="df_goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
-              <item name="df_user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="df_cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dailyrefresh" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dialyrefresh" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="df_goods" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -320,17 +285,17 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\df_cart" />
-      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates" />
-      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\df_goods" />
-      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates\df_goods" />
-      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates\df_user" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates\df_cart" />
       <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates" />
       <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh" />
+      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\df_cart" />
+      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates" />
+      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\df_goods" />
+      <recent name="C:\Users\Administrator\PycharmProjects\dialyrefresh\templates\df_goods" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -585,7 +550,28 @@
       <option name="project" value="LOCAL" />
       <updated>1516515445415</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="complete cart app：&#10;1）add goods in detail and list page with ajax&#10;2) select all and select one&#10;3) edit num with ajax &#10;4) delete cart table record with ajax">
+      <created>1517152879859</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1517152879859</updated>
+    </task>
+    <task id="LOCAL-00008" summary="complete cart app：&#10;1）add goods in detail and list page with ajax&#10;2) select all and select one&#10;3) edit num with ajax &#10;4) delete cart table record with ajax">
+      <created>1519226680185</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1519226680185</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add requirements.txt for develop">
+      <created>1519228475947</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1519228475947</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -601,13 +587,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.4868421" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2193646" sideWeight="0.4868421" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34046054" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34210527" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34210527" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20877458" sideWeight="0.5131579" order="2" side_tool="true" content_ui="tabs" />
@@ -671,7 +657,9 @@
     <MESSAGE value="add list page and detail page(a lot)" />
     <MESSAGE value="add &#10;1) verify logon ,Key word : decorator , AOP&#10;2) logout ,key word : del session&#10;3) recent scan , key word : cookie ,sort" />
     <MESSAGE value="define df_cart app" />
-    <option name="LAST_COMMIT_MESSAGE" value="define df_cart app" />
+    <MESSAGE value="complete cart app：&#10;1）add goods in detail and list page with ajax&#10;2) select all and select one&#10;3) edit num with ajax &#10;4) delete cart table record with ajax" />
+    <MESSAGE value="add requirements.txt for develop" />
+    <option name="LAST_COMMIT_MESSAGE" value="add requirements.txt for develop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,13 +731,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/df_goods/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/df_goods/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
@@ -950,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2898">
           <caret line="138" column="72" lean-forward="false" selection-start-line="138" selection-start-column="72" selection-end-line="138" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -965,9 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-693">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,7 +988,7 @@
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/utils/deprecation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="2856">
           <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
@@ -1021,7 +996,7 @@
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="441">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
@@ -1031,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,7 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1055,7 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,13 +1041,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="595" column="0" lean-forward="false" selection-start-line="595" selection-start-column="0" selection-end-line="595" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
+        <state relative-caret-position="15813">
           <caret line="753" column="0" lean-forward="false" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
           <folding />
         </state>
@@ -1086,14 +1055,14 @@
     <entry file="file://$PROJECT_DIR$/df_user/user_check_decorator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/df_cart/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="231">
           <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="28" />
           <folding />
         </state>
@@ -1101,18 +1070,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/df_cart/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="152" column="33" lean-forward="true" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
-          <folding>
-            <element signature="e#2533#3263#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="3192">
+          <caret line="152" column="33" lean-forward="false" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/df_cart/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="441">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
           <folding>
             <element signature="e#646#678#0" expanded="true" />
           </folding>
@@ -1121,11 +1088,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/df_cart/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1099">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="21">
+          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
